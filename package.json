@@ -1,0 +1,10 @@
+{
+	"name": "maxapp",
+	"version": "0.0.1",
+	"description": "",
+	"license": "MIT",
+	"author": "Max Matinpalo",
+	"bin": {
+		"maxapp": "./bin/init.js"
+	}
+}
