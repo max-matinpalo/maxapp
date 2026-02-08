@@ -1,5 +1,5 @@
 # maxapp
-A clean starting point for a **Vite + React + TypeScript** **PWA** that can be installed on **iOS** and **Android**.
+Goal: cleanest starting point for a **Vite + React + TypeScript** **PWA** that can be installed on **iOS** and **Android**.
 
 Making a web app installable as a PWA (and looking/feeling like a native fullscreen app) is not “just one checkbox”.
 The goal of this template is to provide the **minimal required config + markup + styles** so your app:
@@ -16,7 +16,6 @@ npx maxapp <app-name>
 cd <app-name>
 npm run dev
 ```
-
 
 
 ## What this template sets up
@@ -41,3 +40,9 @@ This template adds **one** dev dependency:
 - `vite-plugin-lint-overlay` (shows **ESLint** + **TypeScript** problems in an in-browser overlay during development)
 
 So you see the important errors directly in the browser, without bouncing between multiple places.
+
+
+## Notes
+PWAs on Android require HTTPS to be installable. So if your local dev server runs on HTTP, 
+Android the Install button won't show. As soon as you deploy your webapp somewhere (for example vercel).
+The limitation is gone.
