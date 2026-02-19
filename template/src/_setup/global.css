@@ -1,19 +1,19 @@
 html,
 body,
 #root {
+	height: 100%;
 	margin: 0;
 	padding: 0;
-	height: 100%;
 	overscroll-behavior: none;
 }
 
 * {
-	box-sizing: border-box;
 	font-family: sans-serif;
-	-webkit-user-select: none;
+	-ms-overflow-style: none;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
-	-ms-overflow-style: none;
+	-webkit-user-select: none;
+	box-sizing: border-box;
 	scrollbar-width: none;
 }
 
@@ -23,8 +23,8 @@ body,
 
 input,
 textarea {
-	user-select: auto;
 	-webkit-user-select: auto;
+	user-select: auto;
 }
 
 div {

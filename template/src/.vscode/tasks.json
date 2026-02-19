@@ -1,0 +1,42 @@
+// Comment task in to autostart server on dir open
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "🎨 css-module-sync",
+			"type": "shell",
+			"command": "npx css-module-sync --a",
+			"presentation": {
+				"reveal": "never",
+				"panel": "dedicated"
+			},
+			"runOptions": {
+				"runOn": "folderOpen"
+			}
+		},
+		{
+			"label": "👩‍🌾 auto-imports",
+			"type": "shell",
+			"command": "npx auto-imports --watch --out src/_setup/globals.js",
+			"presentation": {
+				"reveal": "never",
+				"panel": "dedicated"
+			},
+			"runOptions": {
+				"runOn": "folderOpen"
+			}
+		},
+		{
+			"label": "😃 devserver",
+			"type": "shell",
+			"command": "npm run dev",
+			"presentation": {
+				"reveal": "never",
+				"panel": "dedicated"
+			},
+			"runOptions": {
+				"runOn": "folderOpen"
+			}
+		}
+	]
+}

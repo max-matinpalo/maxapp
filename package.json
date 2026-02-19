@@ -6,5 +6,9 @@
 	"author": "Max Matinpalo",
 	"bin": {
 		"maxapp": "./bin/init.js"
-	}
+	},
+	"files": [
+		"template",
+		"bin"
+	]
 }
