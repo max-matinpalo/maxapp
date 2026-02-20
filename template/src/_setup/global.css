@@ -8,13 +8,14 @@ body,
 }
 
 * {
+	scrollbar-width: none;
 	font-family: sans-serif;
+
 	-ms-overflow-style: none;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	box-sizing: border-box;
-	scrollbar-width: none;
 }
 
 ::-webkit-scrollbar {
