@@ -6,8 +6,6 @@ export default function App() {
 	return (
 		<div className={styles.app} >
 			<h1 className={styles.title}>maxapp </h1>
-
-			{/* reload in dev by clicking bottom left corner */}
 			<ReloadBadge />
 		</div>
 	);

@@ -9,11 +9,11 @@
 		"noUnusedParameters": false,
 		"noUnusedLocals": false,
 		"noImplicitAny": false,
-		"baseUrl": ".",
+		"skipLibCheck": true,
 		"paths": {
-			"@/*": [
-				"src/*"
-			]
+			"*": [
+				"./src/*"
+			],
 		},
 		"types": [
 			"vite/client"
@@ -25,5 +25,5 @@
 	],
 	"exclude": [
 		"node_modules",
-	],
+	]
 }

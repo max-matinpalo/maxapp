@@ -4,6 +4,8 @@
 	"description": "",
 	"license": "MIT",
 	"author": "Max Matinpalo",
+	"type": "module",
+	"main": "src/index.js",
 	"bin": {
 		"maxapp": "./bin/init.js"
 	},
