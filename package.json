@@ -1,6 +1,6 @@
 {
 	"name": "maxapp",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "",
 	"license": "MIT",
 	"author": "Max Matinpalo",
@@ -11,6 +11,7 @@
 	},
 	"files": [
 		"template",
-		"bin"
+		"bin",
+		"src"
 	]
 }
