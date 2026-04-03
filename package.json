@@ -6,6 +6,10 @@
 	"author": "Max Matinpalo",
 	"type": "module",
 	"main": "src/index.js",
+	"exports": {
+		".": "./src/index.js",
+		"./reset.css": "./src/reset.css"
+	},
 	"bin": {
 		"maxapp": "./bin/init.js"
 	},
