@@ -55,7 +55,6 @@ function initProject() {
 
 	// 8. Output success message and optional logs
 	console.log(`✅ Ready\ncd ${appName}\nnpm run dev`);
-	console.log(`cd ${appName} && npm run dev\n`);
 	if (fs.existsSync(logFile)) console.log(fs.readFileSync(logFile, "utf8"));
 }
 
