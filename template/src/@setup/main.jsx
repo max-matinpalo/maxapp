@@ -1,6 +1,8 @@
 
 import "maxapp/reset.css";
+import "maxapp/app.css";
 import "./global.css";
+
 import "./globals";
 
 
