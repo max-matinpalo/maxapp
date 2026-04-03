@@ -3,13 +3,10 @@ import react from '@vitejs/plugin-react';
 import lintOverlay from 'vite-plugin-lint-overlay';
 
 export default defineConfig({
-	plugins: [react(),
-	// @ts-ignore
-	lintOverlay({
-		rootDir: 'src',
-		ts: true, // enable ts for js checking 😃
-		tsconfigPath: 'jsconfig.json',
-	})],
+	plugins: [
+		react(),
+		lintOverlay({ estlint: false, })
+	],
 
 	server: {
 
