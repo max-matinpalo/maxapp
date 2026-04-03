@@ -11,8 +11,6 @@ export default defineConfig({
 		tsconfigPath: 'jsconfig.json',
 	})],
 
-	resolve: { alias: { "@": "/src" } },
-
 	server: {
 
 		// to alloc devserver access on other devices

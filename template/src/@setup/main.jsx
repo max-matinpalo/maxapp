@@ -1,6 +1,7 @@
+
+import "maxapp/reset.css";
 import "./global.css";
 import "./globals";
-
 
 
 // Mainstream js developers think globals are horrible

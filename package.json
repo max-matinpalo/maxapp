@@ -1,6 +1,6 @@
 {
 	"name": "maxapp",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "",
 	"license": "MIT",
 	"author": "Max Matinpalo",
@@ -8,7 +8,22 @@
 	"main": "src/index.js",
 	"exports": {
 		".": "./src/index.js",
-		"./reset.css": "./src/reset.css"
+		"./reset.css": "./src/css/reset.css",
+		"./app.css": "./src/css/app.css"
+	},
+	"dependencies": {
+		"lucide-react": "*",
+		"maxdata": "*",
+		"maxpush": "*",
+		"appmachine": "*",
+		"@capacitor/app": "*",
+		"@capacitor/browser": "*",
+		"@capacitor/device": "*",
+		"@capacitor/haptics": "*",
+		"@capacitor/push-notifications": "*",
+		"@capacitor/share": "*",
+		"@capacitor/status-bar": "*",
+		"@capacitor/keyboard": "*"
 	},
 	"bin": {
 		"maxapp": "./bin/init.js"

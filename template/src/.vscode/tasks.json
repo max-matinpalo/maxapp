@@ -1,4 +1,3 @@
-// Comment task in to autostart server on dir open
 {
 	"version": "2.0.0",
 	"tasks": [
@@ -17,7 +16,7 @@
 		{
 			"label": "👩‍🌾 auto-imports",
 			"type": "shell",
-			"command": "npx auto-imports --watch --out src/_setup/globals.js",
+			"command": "npx auto-imports --watch --out src/@setup/globals.js",
 			"presentation": {
 				"reveal": "never",
 				"panel": "dedicated"

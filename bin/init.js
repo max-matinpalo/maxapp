@@ -29,7 +29,7 @@ function initProject() {
 	}
 
 	// 4. Copy template files to target
-	console.log(`Creating ${appName} 🎨`);
+	console.log(`🔨 Creating ${appName}`);
 	fs.cpSync(templateDir, targetDir, { recursive: true, force: true });
 
 	// 5. Standardize gitignore filename
@@ -46,7 +46,7 @@ function initProject() {
 	});
 
 	// 7. Run package installation
-	console.log("Installing dependencies 📦");
+	console.log("📦 Installing dependencies");
 	try {
 		execSync("npm install", { cwd: targetDir, stdio: "inherit" });
 	} catch (e) {
@@ -54,7 +54,8 @@ function initProject() {
 	}
 
 	// 8. Output success message and optional logs
-	console.log(`\nSuccess! 🚀\ncd ${appName}\nnpm run dev`);
+	console.log(`✅ Ready\ncd ${appName}\nnpm run dev`);
+	console.log(`cd ${appName} && npm run dev\n`);
 	if (fs.existsSync(logFile)) console.log(fs.readFileSync(logFile, "utf8"));
 }
 

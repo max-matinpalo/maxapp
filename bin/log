@@ -1,10 +1,4 @@
-Next:
 
-If mobile app
-
-npm install appmachine
+If mobile app:
 npx appmachine
-
-
-
-npm install maxpush
+npx maxpush client

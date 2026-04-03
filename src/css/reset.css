@@ -1,0 +1,51 @@
+/* 
+	famous resets like eric mayer, reset all
+	max reset: resets most but not all
+	
+	For ui libs which provide for eveything there components, full reset best.
+	But when we want to use html tags as starting point, reset all is contra productive.
+
+	For example, if you reset all, you can't even see visual difference of header and paragraph.
+	We believe approximate font size is much better than all same fontsize.
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, svg, picture {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: inherit;
+}
+
+
+/* For these only reset margin (not padding/border) to keep them better usable by default */
+button, input, textarea, select { margin: 0; font-family: inherit; }
+
+
+/* By default elements like img are inline which can cause unexpected extra space */
+img, svg, picture, video, canvas { display: block; }
+
+
+/* Removes bulletpoints for list items */
+ol, ul { list-style: none; }
+
+
+/* Modern default */
+*, *::before, *::after { box-sizing: border-box; }
+
+
+/* Modern default */
+html { font-family: sans-serif; }
+

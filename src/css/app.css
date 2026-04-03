@@ -1,0 +1,24 @@
+
+/* Clean starting point for pwa app development 2026 */
+
+
+/* App Feel - disable page refresh on overscroll */ 
+body { overscroll-behavior: contain; }
+
+
+/* App Feel - disable browser-style touch callouts ("Open in New Tab"...)  */
+* { -webkit-touch-callout: none; }
+
+
+/* App Feel - disable webside scrollbars  */
+* { scrollbar-width: none; -ms-overflow-style: none; }
+::-webkit-scrollbar { display: none; }
+
+
+/* App Feel - By default only input text selectable, to avoid users accidentally select everything else */
+* { user-select: none; -webkit-user-select: none; }
+input, textarea { user-select: text; -webkit-user-select: text; }
+
+
+/* Disable inconsistent touch highligths */
+* { -webkit-tap-highlight-color: transparent; }
