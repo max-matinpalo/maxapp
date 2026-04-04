@@ -20,6 +20,8 @@
 		"vite": "*",
 		"auto-imports": "*",
 		"css-module-sync": "*",
-		"vite-plugin-lint-overlay": "*"
+		"vite-plugin-lint-overlay": "*",
+		"maxpush": "*",
+		"appmachine": "*"
 	}
 }

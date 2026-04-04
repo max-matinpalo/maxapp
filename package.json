@@ -1,6 +1,6 @@
 {
 	"name": "maxapp",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"description": "",
 	"license": "MIT",
 	"author": "Max Matinpalo",
@@ -14,8 +14,6 @@
 	"dependencies": {
 		"lucide-react": "*",
 		"maxdata": "*",
-		"maxpush": "*",
-		"appmachine": "*",
 		"@capacitor/app": "*",
 		"@capacitor/browser": "*",
 		"@capacitor/device": "*",
