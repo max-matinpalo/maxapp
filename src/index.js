@@ -1,6 +1,6 @@
 
-console.log("maxapp run");
+// index.js
 
-import ReloadBadge from './utils/ReloadBadge.jsx';
-globalThis.ReloadBadge = ReloadBadge;
 
+export { ReloadBadge } from './utils/ReloadBadge.jsx';
+export { Haptic } from "./utils/Haptics.js";

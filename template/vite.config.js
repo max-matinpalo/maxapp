@@ -5,7 +5,7 @@ import lintOverlay from 'vite-plugin-lint-overlay';
 export default defineConfig({
 	plugins: [
 		react(),
-		lintOverlay({ estlint: false, })
+		lintOverlay({ eslint: false })
 	],
 
 	server: {
