@@ -1,6 +1,6 @@
 
 
-export default function ReloadBadge() {
+export function ReloadBadge() {
 
 	if (!import.meta.env.DEV) return null;
 

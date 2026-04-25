@@ -1,8 +1,8 @@
 import { Haptics, ImpactStyle, NotificationType } from "@capacitor/haptics";
 
-const run = (p) => p.catch(() => { });
+function run(p) { p.catch(() => { }); };
 
-const HAPTIC = {
+export const Haptic = {
 	// Impact
 	light: () => run(Haptics.impact({ style: ImpactStyle.Light })),
 	medium: () => run(Haptics.impact({ style: ImpactStyle.Medium })),
@@ -18,4 +18,3 @@ const HAPTIC = {
 	selection: () => run(Haptics.selectionChanged()),
 };
 
-export default HAPTIC;

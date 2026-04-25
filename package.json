@@ -1,6 +1,6 @@
 {
 	"name": "maxapp",
-	"version": "0.3.4",
+	"version": "0.3.5",
 	"description": "",
 	"author": "Max Matinpalo",
 	"type": "module",
@@ -11,17 +11,17 @@
 		"./reset.css": "./src/css/reset.css",
 		"./app.css": "./src/css/app.css"
 	},
-	"dependencies": {
-		"lucide-react": "*",
-		"maxdata": "*",
+	"peerDependencies": {
+		"react": "*",
+		"react-dom": "*",
 		"@capacitor/app": "*",
 		"@capacitor/browser": "*",
 		"@capacitor/device": "*",
-		"@capacitor/haptics": "*",
+		"@capacitor/haptics": "^8.0.2",
+		"@capacitor/keyboard": "*",
 		"@capacitor/push-notifications": "*",
 		"@capacitor/share": "*",
-		"@capacitor/status-bar": "*",
-		"@capacitor/keyboard": "*"
+		"@capacitor/status-bar": "*"
 	},
 	"bin": {
 		"maxapp": "./bin/init.js"
