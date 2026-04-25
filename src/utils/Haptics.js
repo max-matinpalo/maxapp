@@ -2,7 +2,7 @@ import { Haptics, ImpactStyle, NotificationType } from "@capacitor/haptics";
 
 function run(p) { p.catch(() => { }); };
 
-export const Haptic = {
+export const Haptics = {
 	// Impact
 	light: () => run(Haptics.impact({ style: ImpactStyle.Light })),
 	medium: () => run(Haptics.impact({ style: ImpactStyle.Medium })),
