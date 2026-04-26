@@ -1,6 +1,6 @@
 {
 	"name": "maxapp",
-	"version": "0.3.6",
+	"version": "0.3.7",
 	"description": "",
 	"author": "Max Matinpalo",
 	"type": "module",
@@ -9,7 +9,8 @@
 		".": "./src/index.js",
 		"./global": "./src/global.js",
 		"./reset.css": "./src/css/reset.css",
-		"./app.css": "./src/css/app.css"
+		"./app.css": "./src/css/app.css",
+		"./arrayHelpers": "./src/utils/arrayHelpers.js"
 	},
 	"peerDependencies": {
 		"react": "*",
