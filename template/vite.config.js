@@ -1,22 +1,25 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import preact from '@preact/preset-vite';
+import autoImports from "auto-imports";
 import lintOverlay from 'vite-plugin-lint-overlay';
 
+// https://vite.dev/config/
 export default defineConfig({
 	plugins: [
-		react(),
-		lintOverlay({ eslint: false })
+		preact(),
+		autoImports(),
+		lintOverlay({ eslint: false }),
 	],
 
 	server: {
 
-		// to alloc devserver access on other devices
+		// allow devserver access on other devices
 		host: true,
 
-		// to allow devserver access by domain like max.local
+		// allow devserver access by domain like max.local
 		allowedHosts: true,
 
-		// to auto open browser
+		// auto open browser
 		open: true,
 
 	},

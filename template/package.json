@@ -5,23 +5,20 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build"
+		"build": "vite build",
+		"preview": "vite preview"
 	},
 	"dependencies": {
-		"react": "*",
-		"react-dom": "*",
-		"maxapp": "*"
+		"maxapp": "*",
+		"maxfetch": "*",
+		"preact": "*",
+		"use-refresh": "*"
 	},
 	"devDependencies": {
-		"@types/react": "*",
-		"@types/react-dom": "*",
-		"@vitejs/plugin-react": "*",
-		"globals": "*",
-		"vite": "*",
 		"auto-imports": "*",
+		"@preact/preset-vite": "*",
 		"css-module-sync": "*",
-		"vite-plugin-lint-overlay": "*",
-		"maxpush": "*",
-		"appmachine": "*"
+		"vite": "*",
+		"vite-plugin-lint-overlay": "*"
 	}
 }

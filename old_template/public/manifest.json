@@ -1,6 +1,6 @@
 {
-	"name": "maxapp_old",
-	"short_name": "maxapp_old",
+	"name": "__NAME__",
+	"short_name": "__NAME__",
 	"id": "/",
 	"start_url": "/",
 	"scope": "/",

@@ -14,7 +14,19 @@
 			}
 		},
 		{
-			"label": "vite",
+			"label": "👩‍🌾 auto-imports",
+			"type": "shell",
+			"command": "npx auto-imports --watch --out src/@setup/globals.js",
+			"presentation": {
+				"reveal": "never",
+				"panel": "dedicated"
+			},
+			"runOptions": {
+				"runOn": "folderOpen"
+			}
+		},
+		{
+			"label": "😃 devserver",
 			"type": "shell",
 			"command": "npm run dev",
 			"presentation": {

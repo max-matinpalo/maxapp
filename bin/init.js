@@ -8,7 +8,6 @@ import { execSync } from "child_process";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 function initProject() {
-
 	// 1. Format app name and resolve paths
 	const rawName = (process.argv[2] || "newapp").trim();
 	const appName = rawName.toLowerCase().replace(/\s+/g, "-");
@@ -32,9 +31,19 @@ function initProject() {
 	console.log(`🔨 Creating ${appName}`);
 	fs.cpSync(templateDir, targetDir, { recursive: true, force: true });
 
-	// 5. Standardize gitignore filename
+	// 5. Standardize gitignore and environment filenames
 	const gitignorePath = path.join(targetDir, "gitignore");
 	if (fs.existsSync(gitignorePath)) fs.renameSync(gitignorePath, path.join(targetDir, ".gitignore"));
+
+	const envDevPath = path.join(targetDir, "env.development");
+	if (fs.existsSync(envDevPath)) {
+		fs.renameSync(envDevPath, path.join(targetDir, ".env.development"));
+	}
+
+	const envProdPath = path.join(targetDir, "env.production");
+	if (fs.existsSync(envProdPath)) {
+		fs.renameSync(envProdPath, path.join(targetDir, ".env.production"));
+	}
 
 	// 6. Replace __NAME__ placeholders in core files
 	const files = ["package.json", "index.html", "public/manifest.json", "src/App.jsx"];

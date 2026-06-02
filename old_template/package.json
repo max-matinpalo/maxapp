@@ -1,0 +1,27 @@
+{
+	"name": "__NAME__",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build"
+	},
+	"dependencies": {
+		"react": "*",
+		"react-dom": "*",
+		"maxapp": "*"
+	},
+	"devDependencies": {
+		"@types/react": "*",
+		"@types/react-dom": "*",
+		"@vitejs/plugin-react": "*",
+		"globals": "*",
+		"vite": "*",
+		"auto-imports": "*",
+		"css-module-sync": "*",
+		"vite-plugin-lint-overlay": "*",
+		"maxpush": "*",
+		"appmachine": "*"
+	}
+}
