@@ -24,6 +24,20 @@
 			"runOptions": {
 				"runOn": "folderOpen"
 			}
+		},
+		/*
+		{
+			"label": "maxai",
+			"type": "shell",
+			"command": "p",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated"
+			},
+			"runOptions": {
+				"runOn": "folderOpen"
+			}
 		}
+		*/
 	]
 }
