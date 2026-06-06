@@ -1,7 +1,7 @@
 {
 	"name": "maxapp",
-	"version": "0.5.2",
-	"description": "",
+	"version": "0.6.0",
+	"description": "personal preact template",
 	"author": "Max Matinpalo",
 	"type": "module",
 	"main": "src/index.js",

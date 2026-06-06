@@ -2,27 +2,33 @@ import "maxapp/reset.css";
 import "maxapp/app.css";
 import "./global.css";
 
-// Mainstream js developers think globals are horrible
-// But because we are C developers - We love them 😅
 
+// Setup react globals
 import { useState, useEffect, useRef, useLayoutEffect } from "preact/hooks";
 globalThis.useState = useState;
 globalThis.useEffect = useEffect;
 globalThis.useRef = useRef;
 globalThis.useLayoutEffect = useLayoutEffect;
 
-globalThis.ENV = import.meta.env;
+// Setup other globals
 globalThis.STATE = {};
+globalThis.ENV = import.meta.env;
 globalThis.JOIN_CLASSES = (...classes) => classes.filter(Boolean).join(" ");
 
+
+// Setup maxfetch
+import { setupApi } from "maxfetch";
+globalThis.api = setupApi({ baseUrl: import.meta.env.VITE_API_URL });
+
+api.onRequest(config => {
+	if (localStorage.accessToken)
+		config.headers["Authorization"] = `Bearer ${localStorage.accessToken}`;
+});
+
+
+// Enable useRefresh
 import "use-refresh/global";
-import "maxfetch/global";
-API_CONFIG.baseUrl = import.meta.env.VITE_API_URL;
 
-
-// Clear console on devserver reload
-if (import.meta.hot)
-	import.meta.hot.on("vite:beforeUpdate", () => console.clear());
 
 // To enable insall as pwa
 if ("serviceWorker" in navigator)
@@ -30,5 +36,5 @@ if ("serviceWorker" in navigator)
 		navigator.serviceWorker.register("/serviceWorker.js"));
 
 
-import { render } from 'preact';
-render(<App />, document.getElementById('app'));
+import { render } from "preact";
+render(<App />, document.getElementById("app"));

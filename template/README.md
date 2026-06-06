@@ -21,3 +21,15 @@ IMPROVEMENT IDEAS
 - the router you wrote for gui is great
 - or as package maxroute, simplest react router..
 - test the fetcher
+
+
+
+## GOOD CAPACITOR PACKAGES
+@capacitor/app
+@capacitor/browser
+@capacitor/device
+@capacitor/haptics
+@capacitor/keyboard
+@capacitor/push-notifications
+@capacitor/share
+@capacitor/status-bar
