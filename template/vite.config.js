@@ -8,8 +8,7 @@ export default defineConfig({
 	plugins: [
 		preact(),
 		autoImports(),
-		lintOverlay({ eslint: false }),
-		{ name: "autoClear", handleHotUpdate() { console.clear(); } }
+		lintOverlay({ eslint: false })
 	],
 
 	server: {

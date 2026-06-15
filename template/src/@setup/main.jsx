@@ -29,6 +29,9 @@ api.onRequest(config => {
 // Enable useRefresh
 import "use-refresh/global";
 
+// Clear console on refresh
+if (import.meta.hot)
+	import.meta.hot.on("vite:beforeUpdate", () => console.clear());
 
 // To enable insall as pwa
 if ("serviceWorker" in navigator)

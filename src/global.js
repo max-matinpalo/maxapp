@@ -1,5 +1,7 @@
 // global.js
 
+// test
+
 import { ReloadBadge } from "./index.js";
 globalThis.ReloadBadge = ReloadBadge;
 
